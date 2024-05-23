@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "cd9f677c-17d5-45a0-b8fb-c004b3e0fa09",
+		"name": "apiCentribal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32375589"
+	},
+	"item": [
+		{
+			"name": "articles",
+			"item": [
+				{
+					"name": "getArticles",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "postArticles",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    reference='121212',\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/articles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"articles"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putArticles",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"reference\": \"121212\",\r\n    \"name\": \"articulo 1 editado\",\r\n    \"description\": \"descripcion del articulo 1\",\r\n    \"priceWithOutTaxes\": 999.79,\r\n    \"taxes\": 99.80\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/articles/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"articles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteArticles",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/articles/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"articles",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "orders",
+			"item": [
+				{
+					"name": "getOrders",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "postOrders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{            \r\n    \"listArticles\": [\r\n        {\r\n        \"quantity\": \"3\",\r\n        \"reference\": \"121212\"\r\n        },\r\n        {\r\n        \"quantity\": \"6\",\r\n        \"reference\": \"151515\"\r\n        }\r\n    ],\r\n    \"priceTotalWithOutTaxes\": \"600.00\",\r\n    \"priceTotalWithTaxes\": \"7000.00\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putOrders",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOrders",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/orders/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"orders",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
