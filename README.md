@@ -10,9 +10,9 @@ El proyecto es una REST API para una aplicación de gestión de artículos y ped
 • Pedidos: se pueden crear nuevos pedidos adjuntando los artículos ya creados, editarlos y eliminarlos.
 
 Pasos
-1- activar el entorno virtual de python en consola con el comando “myenv\Scripts\activate”
-2- se crea el contenedor de docker con el comando “docker-compose build”
-3- se sube el contenedor con el comando “docker-compose up”
-4- importar el archivo “apiCentribal.postman_collection” en postman que se encuentra en la carpeta principal de centribalApi.
-5-para visualizar desde el navegador debe ingresar a “http://localhost:8000/articles/” o a “http://localhost:8000/orders/ ”
-6- Para realizar pruebas unitarias ingresar el comando “pytest-v”
+
+1- se crea el contenedor de docker con el comando “docker-compose build”
+2- se sube el contenedor con el comando “docker-compose up”
+3- importar el archivo “apiCentribal.postman_collection” en postman que se encuentra en la carpeta principal de centribalApi.
+4-para visualizar desde el navegador debe ingresar a “http://localhost:8000/articles/” o a “http://localhost:8000/orders/ ”
+5- Para realizar pruebas unitarias ingresar el comando “pytest-v”
